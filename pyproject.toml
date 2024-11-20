@@ -4,7 +4,7 @@ build-backend = "setuptools.build_meta"
 
 [project]
 name = "llama_ocr"
-version = "0.1.0"
+version = "0.2.0"
 description = "OCR using LLAMA vision model, allowing configuring any OpenAI compliant endpoints and model names."
 readme = "README.rst"
 authors = [
