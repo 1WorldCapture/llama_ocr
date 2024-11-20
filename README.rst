@@ -16,17 +16,36 @@ LLAMA OCR
 
 
 
-OCR using LLAMA vision model, allowing configuring any OpenAI compliant endpoints and model names.
+OCR using LLAMA vision model, allowing configuring any OpenAI compliant endpoints and model names. This is the python version of [llama-ocr](https://github.com/Nutlope/llama-ocr/tree/main).
 
 
 * Free software: MIT license
-* Documentation: https://llama-ocr.readthedocs.io.
 
+Installation
+------------
 
-Features
+`pip install llama-ocr`
+
+Usage
 --------
 
-* TODO
+```python
+from llama_ocr import ocr
+
+data = ocr(
+  file_path="./test.png", 
+  api_key="xxxxx",
+  base_url="https://openrouter.ai/api",
+  model="meta-llama/llama-3.2-11b-vision-instruct:free"
+) 
+```
+
+- `file_path`: Path to the image file
+- `api_key`: Your LLM API key
+- `base_url`: The base URL of the LLM API
+- `model`: The model to use
+
+By default, this project will use free model from OpenRouter. So you just need to provide your API key and image path.
 
 Credits
 -------
