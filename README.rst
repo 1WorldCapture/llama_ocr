@@ -11,7 +11,6 @@ Installation
 ------------
 
 .. code-block:: bash
-    :linenos:
 
     pip install llama-ocr
 
@@ -19,7 +18,6 @@ Usage
 --------
 
 .. code-block:: python
-    :linenos:
 
     from llama_ocr import ocr
 
